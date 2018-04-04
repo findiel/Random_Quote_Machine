@@ -555,7 +555,7 @@ $(document).ready(function() {
   $(".github").click(function() {
     window.open("https://github.com/Fjollsfinn");
   });
-  //Opens Faceboob profile in new window.
+  //Opens Facebook profile in new window.
   $(".facebook").click(function() {
     window.open("https://www.facebook.com/bartlomiej.tuchowski");
   });

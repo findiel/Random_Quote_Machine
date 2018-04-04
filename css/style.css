@@ -1,3 +1,13 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
 body {
     background-color: black;
     font-family: "Indie Flower", cursive;
@@ -5,6 +15,7 @@ body {
 }
 
 h1 {
+    font-size: 4rem;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -17,29 +28,32 @@ h1 {
 }
   
 .central-box {
-    border-radius: 5px;
+    border-radius: .5rem;
     background-color: white;
-    width: 500px;
-    heigh: auto;
-    padding: 20px 20px 20px 20px;
+    width: 50rem;;
+    height: auto;
+    padding: 2rem;
 }
   
 .quote-text {
+    font-family: inherit;
     color: black;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: bold;
 }
   
 .quote-author {
-    margin-top: 20px;
+    font-family: inherit;
+    margin-top: 2rem;
     text-align: right;
-    font-size: 20px;
+    font-size: 2rem;;
 }
   
 footer {
+    font-size: 1.6rem;
     color: white;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
   
 .footer-buttons,
@@ -56,13 +70,15 @@ footer {
     font-weight: bold;
     background-color: black;
     color: white;
-    height: 38px;
-    width: 100px;
-    margin: 40px 30px 0px 30px;
+    height: 3.8rem;
+    width: 10rem;
+    margin: 4rem 3rem 0 3rem;
 }
   
 .btn {
     border: 1px solid #5BC0DE;
+    border-radius: 3px;
+    font-family: inherit;
 }
   
 .btn:hover {
@@ -75,9 +91,9 @@ footer {
     font-weight: bold;
     background-color: black;
     color: white;
-    height: 38px;
-    width: 45px;
-    margin: 5px 10px 0px 10px;
+    height: 3.8rem;
+    width: 4.5rem;
+    margin: .5rem 1rem 0 1rem;
 }
   
 .btn:focus, .btn:active {
