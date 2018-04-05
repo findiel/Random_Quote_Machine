@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log("Coded by Bartłomiej Tuchowski"); //Signature.
 
   //Colors dictionary - to get random button & body color.
-  var colors = ["Black","BlueViolet","CadetBlue","Coral","CornflowerBlue","Crimson","DarkCyan","DarkSalmon","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkViolet","DimGray","DimGrey","DodgerBlue","ForestGreen","Gray","Grey","IndianRed","Indigo","LightCoral","LightGreen","LightSeaGreen","LightSlateGray","LightSlateGrey","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","Peru","RoyalBlue","Salmon","SeaGreen","SlateBlue","SlateGray","SlateGrey","SteelBlue","Teal","Tomato", "#009688", "#536DFE", "#673AB7", "#4CAF50", "#455A64", "#795548" ];
+  var colors = ["Black","BlueViolet","CadetBlue","Coral","CornflowerBlue","DarkCyan","DarkSalmon","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkViolet","DimGray","DimGrey","DodgerBlue","ForestGreen","Gray","Grey","IndianRed","Indigo","LightCoral","LightGreen","LightSeaGreen","LightSlateGray","LightSlateGrey","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","Peru","RoyalBlue","Salmon","SeaGreen","SlateBlue","SlateGray","SlateGrey","SteelBlue","Teal","Tomato", "#009688", "#536DFE", "#673AB7", "#4CAF50", "#455A64", "#795548" ];
 
   //Quotes dictionary - to get random quote.
   var quotes = [{

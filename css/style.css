@@ -89,6 +89,11 @@ footer {
     margin-top: 1rem;
 }
 
+.fa-heart {
+    color: red;
+    font-size: 1.4rem;
+}
+
 .col-1-of-3--small-margin {
     display: inline-block;
     margin: 1rem 1rem 0 1rem;
