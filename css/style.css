@@ -12,6 +12,13 @@ html {
 body {
     background-color: black;
     margin-top: 10%;
+}  
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -20,16 +27,9 @@ h1 {
     color: white;
     font-weight: bold;
 }
-  
-.container,
-.row,
-.footer-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
+
 .central-box {
+    position: relative;
     border-radius: .5rem;
     background-color: white;
     width: 50rem;;
@@ -37,16 +37,25 @@ h1 {
     padding: 2rem;
 }
   
-.quote-text {
+.central-box__quote-text {
     color: black;
     font-size: 2.6rem;
     font-weight: bold;
 }
   
-.quote-author {
+.central-box__quote-author {
     margin-top: 2rem;
     text-align: right;
     font-size: 2rem;;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.col-1-of-3 {
+    display: inline-block;
+    margin: 4rem 3rem 0 3rem;
 }
 
 .btn {
@@ -62,17 +71,16 @@ h1 {
     outline: none !important;
     box-shadow: none !important;
 }
-  
-.like,
-.twitter,
-.new-quote {
+
+.btn--like,
+.btn--twitter,
+.btn--new-quote {
     font-weight: bold;
     background-color: black;
     color: white;
     height: 3.8rem;
     width: 10rem;
-    margin: 4rem 3rem 0 3rem;
-} 
+}
 
 footer {
     font-size: 1.6rem;
@@ -81,13 +89,17 @@ footer {
     margin-top: 1rem;
 }
 
-.codepen,
-.github,
-.facebook {
+.col-1-of-3--small-margin {
+    display: inline-block;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.btn--codepen,
+.btn--github,
+.btn--facebook {
     font-weight: bold;
     background-color: black;
     color: white;
     height: 3.8rem;
     width: 4.5rem;
-    margin: .5rem 1rem 0 1rem;
 }

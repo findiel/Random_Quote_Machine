@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log("Coded by Bartłomiej Tuchowski"); //Signature.
 
   //Colors dictionary - to get random button & body color.
-  var colors = ["Black","BlueViolet","Brown","CadetBlue","Coral","CornflowerBlue","Crimson","DarkCyan","DarkGreen","DarkMagenta","DarkSalmon","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkViolet","DimGray","DimGrey","DodgerBlue","FireBrick","ForestGreen","Gray","Grey","HotPink","IndianRed","Indigo","LightCoral","LightGreen","LightSalmon","LightSeaGreen","LightSlateGray","LightSlateGrey","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MidnightBlue","PaleVioletRed","Peru","Plum","Purple","RosyBrown","RoyalBlue","Salmon","SeaGreen","SlateBlue","SlateGray","SlateGrey","SteelBlue","Teal","Tomato"];
+  var colors = ["Black","BlueViolet","CadetBlue","Coral","CornflowerBlue","Crimson","DarkCyan","DarkSalmon","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkViolet","DimGray","DimGrey","DodgerBlue","ForestGreen","Gray","Grey","IndianRed","Indigo","LightCoral","LightGreen","LightSeaGreen","LightSlateGray","LightSlateGrey","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","Peru","RoyalBlue","Salmon","SeaGreen","SlateBlue","SlateGray","SlateGrey","SteelBlue","Teal","Tomato", "#009688", "#536DFE", "#673AB7", "#4CAF50", "#455A64", "#795548" ];
 
   //Quotes dictionary - to get random quote.
   var quotes = [{
@@ -526,35 +526,35 @@ $(document).ready(function() {
   //Function fades in new quoute.
   function fadeInQuote() {
     var quoteIndex = gettingRandom(0, quotes.length); //Gets random number in quotes dictionary range.
-    $(".quote-text").html('"' + quotes[quoteIndex].quoteText + '"'); //Updates quote text.
-    $(".quote-author").html('-' + quotes[quoteIndex].quoteAuthor); //Updates quote author.
-    $(".quote-text, .quote-author").fadeIn(1000); 
+    $(".central-box__quote-text").html('"' + quotes[quoteIndex].quoteText + '"'); //Updates quote text.
+    $(".central-box__quote-author").html('-' + quotes[quoteIndex].quoteAuthor); //Updates quote author.
+    $(".central-box__quote-text, .central-box__quote-author").fadeIn(1000); 
   };
 
   //Getting new Quote when clicked.
-  $(".new-quote").on("click", function () {
+  $(".btn--new-quote").on("click", function () {
     $("body").fadeOut(1000, fadeInBody); //fade out old body and fade in new.
-    $(".quote-text, .quote-author").fadeOut(1000, fadeInQuote); //fade out old quoute and fade in new.
+    $(".central-box__quote-text, .central-box__quote-author").fadeOut(1000, fadeInQuote); //fade out old quoute and fade in new.
   });
   //Like this app and share it on Facebook when clicked.
-  $(".like").click(function() {
+  $(".btn--like").click(function() {
     window.open("https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/Milthir/pen/eypMPE?editors=1111");
   });
   //Tweet current quote with #inspiration hashtag when clicked.
-  $(".twitter").click(function() {
-    window.open("https://twitter.com/intent/tweet?text=" + document.getElementsByClassName("quote-text")[0].textContent + document.getElementsByClassName("quote-author")[0].textContent + "&hashtags=inspiration");
+  $(".btn--twitter").click(function() {
+    window.open("https://twitter.com/intent/tweet?text=" + document.getElementsByClassName("central-box__quote-text")[0].textContent + document.getElementsByClassName("central-box__quote-author")[0].textContent + "&hashtags=inspiration");
   });
   //Footer buttons
   //Opens Codepen profile in new widnow when clicked.
-  $(".codepen").click(function() {
+  $(".btn--codepen").click(function() {
     window.open("https://codepen.io/Milthir/#");
   });
   //Opens Github profile in new window when clicked.
-  $(".github").click(function() {
+  $(".btn--github").click(function() {
     window.open("https://github.com/Fjollsfinn");
   });
   //Opens Facebook profile in new window when clicked.
-  $(".facebook").click(function() {
+  $(".btn--facebook").click(function() {
     window.open("https://www.facebook.com/bartlomiej.tuchowski");
   });
 
