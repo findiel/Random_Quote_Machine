@@ -45,8 +45,10 @@ h1 {
     background-color: white;
     width: 50rem;
     height: auto;
-    padding: 2rem;
-}
+    padding: 2rem; }
+    @media (max-width: 23.75em) {
+        .central-box{
+            width: 35rem; } }
   
 .central-box__quote-text {
     color: black;
@@ -66,8 +68,10 @@ h1 {
 
 .col-1-of-3 {
     display: inline-block;
-    margin: 4rem 3rem 0 3rem;
-}
+    margin: 4rem 3rem 0 3rem; }
+    @media (max-width: 23.75em) {
+        .col-1-of-3 {
+            margin: 2rem 1.5rem 0 1.5rem; } }
 
 .btn {
     border: 1px solid #5BC0DE;
@@ -90,8 +94,13 @@ h1 {
     background-color: black;
     color: white;
     height: 3.8rem;
-    width: 10rem;
-}
+    width: 10rem; }
+    @media (max-width: 23.75em) {
+        .btn--like,
+        .btn--twitter,
+        .btn--new-quote { 
+            height: 3rem;
+            width: 7.5rem; } }
 
 footer {
     font-size: 1.6rem;
