@@ -538,7 +538,7 @@ $(document).ready(function() {
   });
   //Like this app and share it on Facebook when clicked.
   $(".btn--like").click(function() {
-    window.open("https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/Milthir/pen/eypMPE?editors=1111");
+    window.open("https://www.facebook.com/sharer/sharer.php?u=https://fjollsfinn.github.io/Random_Quote_Machine/index.html");
   });
   //Tweet current quote with #inspiration hashtag when clicked.
   $(".btn--twitter").click(function() {
