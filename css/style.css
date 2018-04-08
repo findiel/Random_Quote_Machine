@@ -76,6 +76,10 @@ h1 {
 .btn {
     border: 1px solid #5BC0DE;
     border-radius: 3px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    height: 3.8rem;
 }
   
 .btn:hover {
@@ -89,11 +93,7 @@ h1 {
 
 .btn--like,
 .btn--twitter,
-.btn--new-quote {
-    font-weight: bold;
-    background-color: black;
-    color: white;
-    height: 3.8rem;
+.btn--new-quote {;
     width: 10rem; }
     @media (max-width: 23.75em) {
         .btn--like,
@@ -122,9 +122,5 @@ footer {
 .btn--codepen,
 .btn--github,
 .btn--facebook {
-    font-weight: bold;
-    background-color: black;
-    color: white;
-    height: 3.8rem;
     width: 4.5rem;
 }
