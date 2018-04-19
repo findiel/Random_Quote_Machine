@@ -535,29 +535,29 @@ $(document).ready(function() {
   $(".btn--new-quote").on("click", function () {
     $("body").fadeOut(1000, fadeInBody); //fade out old body and fade in new.
     $(".central-box__quote-text, .central-box__quote-author").fadeOut(1000, fadeInQuote); //fade out old quoute and fade in new.
-  });
+  })
   //Like this app and share it on Facebook when clicked.
   $(".btn--like").click(function() {
     window.open("https://www.facebook.com/sharer/sharer.php?u=https://fjollsfinn.github.io/Random_Quote_Machine/index.html");
-  });
+  })
   //Tweet current quote with #inspiration hashtag when clicked.
   $(".btn--twitter").click(function() {
     window.open("https://twitter.com/intent/tweet?text=" + document.getElementsByClassName("central-box__quote-text")[0].textContent + document.getElementsByClassName("central-box__quote-author")[0].textContent + "&hashtags=inspiration");
-  });
+  })
   //Footer buttons
   //Opens Codepen profile in new widnow when clicked.
   $(".btn--codepen").click(function() {
     window.open("https://codepen.io/Milthir/#");
-  });
+  })
   //Opens Github profile in new window when clicked.
   $(".btn--github").click(function() {
     window.open("https://github.com/Fjollsfinn");
-  });
+  })
   //Opens Facebook profile in new window when clicked.
   $(".btn--facebook").click(function() {
     window.open("https://www.facebook.com/bartlomiej.tuchowski");
-  });
+  })
 
   //Calling fadeInQuote() function when refreshes the page- first call.
   fadeInQuote();
-});
+})
