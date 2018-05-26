@@ -555,7 +555,7 @@ $(document).ready(function() {
   })
   //Opens Facebook profile in new window when clicked.
   $(".btn--facebook").click(function() {
-    window.open("https://www.facebook.com/bartlomiej.tuchowski");
+    window.open("https://www.facebook.com/Fjollsfinn.dev/");
   })
 
   //Calling fadeInQuote() function when refreshes the page- first call.
